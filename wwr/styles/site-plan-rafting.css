@@ -1,4 +1,3 @@
-```css
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700&family=Permanent+Marker&display=swap');
 
 
@@ -17,7 +16,7 @@
     --white: #FFFFFF;
     --dark: #082C36;
     --gray: #66777D;
-    --light-gray: #050505;
+    --light-gray: #DCE4E5;
 
     --heading-font: 'Bebas Neue', sans-serif;
     --paragraph-font: 'Montserrat', sans-serif;
@@ -100,7 +99,7 @@ a {
 
     gap: 12px;
 
-    color: rgb(245, 240, 240);
+    color: var(--white);
 
     font-family: var(--heading-font);
 
@@ -362,7 +361,7 @@ a {
 
     background: var(--primary-color);
 
-    color: rgb(5, 5, 5);
+    color: var(--white);
 
     position: relative;
 
@@ -504,7 +503,7 @@ a {
 
 .brand-copy > p:last-child {
 
-    color: #040404;
+    color: #D4E5E8;
 
     max-width: 500px;
 }
@@ -1262,4 +1261,22 @@ footer p {
     }
 
 }
-```
+
+/* Keep section titles visible below the sticky navigation. */
+.section[id] { scroll-margin-top: 95px; }
+.site-header nav a:focus-visible,
+.brand:focus-visible,
+.nav-links a:focus-visible {
+    outline: 3px solid var(--accent2-color);
+    outline-offset: 3px;
+}
+@media screen and (max-width: 600px) {
+    .plan-hero h1 { font-size: clamp(3.6rem, 15vw, 5.5rem); }
+    .feature-card { min-height: auto; }
+    .wireframe { box-shadow: 7px 7px 0 var(--accent2-color); }
+    .nav-preview { padding: 20px 12px; }
+    .nav-links a { padding: 10px; }
+}
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+}
