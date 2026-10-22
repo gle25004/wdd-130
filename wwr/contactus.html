@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta name="description" content="Contact Dry Oar Rafting and try the contact form on this WDD 130 class project.">
+    <link rel="icon" href="images/logo.png" type="image/png">
     <title>Dry Oar | Contact</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,6 +18,7 @@
 </head>
 
 <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
     <!-- HEADER -->
 
@@ -38,14 +41,13 @@
             <a href="index.html">
                 Home
             </a>
+            <a href="rivers.html">Rivers</a>
 
             <a href="index.html#adventures">
                 Adventures
             </a>
 
-            <a href="contactus.html">
-                Contact
-            </a>
+            <a href="contactus.html" aria-current="page">Contact</a>
 
             <a href="site-plan-rafting.html">
                 Site Plan
@@ -56,7 +58,7 @@
     </header>
 
 
-    <main>
+    <main id="main-content">
 
         <!-- CONTACT HERO -->
 
@@ -100,54 +102,29 @@
                 </h2>
 
                 <p>
-                    We would love to hear from you. Use the
-                    form to send us a message or use the
-                    information below.
+                    This is a student website for WDD 130. Feel free to try the form to see how it works.
                 </p>
 
 
                 <div class="contact-details">
-
                     <div>
-
-                        <strong>EMAIL</strong>
-
-                        <span>
-                            hello@dryoarra​​fting.com
-                        </span>
-
+                        <strong>ABOUT THE PROJECT</strong>
+                        <span>Dry Oar is a sample rafting website created for WDD 130.</span>
                     </div>
-
-
                     <div>
-
-                        <strong>PHONE</strong>
-
-                        <span>
-                            (555) 123-4567
-                        </span>
-
+                        <strong>HOW THE FORM WORKS</strong>
+                        <span>The form checks your information and displays a demo confirmation. It does not send an email.</span>
                     </div>
-
-
                     <div>
-
-                        <strong>LOCATION</strong>
-
-                        <span>
-                            River Country, USA
-                        </span>
-
+                        <strong>LOOKING FOR ADVENTURES?</strong>
+                        <span><a href="rivers.html">Browse river, camping, and rapids information.</a></span>
                     </div>
-
                 </div>
-
             </div>
-
 
             <!-- FORM -->
 
-            <form>
+            <form id="contact-form">
 
                 <label for="name">
                     Your Name
@@ -157,6 +134,8 @@
                     type="text"
                     id="name"
                     name="name"
+                    autocomplete="name"
+                    required
                     placeholder="Your name"
                 >
 
@@ -169,6 +148,8 @@
                     type="email"
                     id="email"
                     name="email"
+                    autocomplete="email"
+                    required
                     placeholder="you@example.com"
                 >
 
@@ -181,6 +162,7 @@
                     type="text"
                     id="subject"
                     name="subject"
+                    required
                     placeholder="What can we help with?"
                 >
 
@@ -192,14 +174,15 @@
                 <textarea
                     id="message"
                     name="message"
+                    required
                     rows="6"
                     placeholder="Tell us about your adventure..."
                 ></textarea>
 
 
-                <button type="submit">
-                    SEND MESSAGE
-                </button>
+                <button type="submit">TRY THE FORM</button>
+                <p class="form-note">Demo only — your message will not be sent.</p>
+                <p class="form-feedback" id="form-feedback" role="status" aria-live="polite" hidden></p>
 
             </form>
 
@@ -234,21 +217,21 @@
 
         <div class="social">
 
-            <a href="#" aria-label="Facebook">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook (opens new tab)">
                 <img
                     src="images/facebook.png"
                     alt="Facebook"
                 >
             </a>
 
-            <a href="#" aria-label="Twitter">
+            <a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X (opens new tab)">
                 <img
                     src="images/twitter.png"
                     alt="Twitter"
                 >
             </a>
 
-            <a href="#" aria-label="Instagram">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram (opens new tab)">
                 <img
                     src="images/instagram.png"
                     alt="Instagram"
@@ -264,7 +247,19 @@
 
     </footer>
 
+<script>
+    // Demonstration form: no backend or email service is connected.
+    const form = document.querySelector('#contact-form');
+    const feedback = document.querySelector('#form-feedback');
+    form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const visitorName = form.elements.name.value.trim();
+        feedback.textContent = 'Thanks, ' + visitorName + '! Your form passed validation. This is a class project, so no message was sent.';
+        feedback.hidden = false;
+        form.reset();
+        feedback.focus();
+    });
+</script>
 </body>
 
 </html>
-```
