@@ -1,30 +1,24 @@
+/* Halloween CSS */
+
 body {
-    background-color: #222;
-    color: white;
+    background-color: #f5e6cf;
+    color: black;
     font-family: Arial;
 }
 
 header {
     background-color: orange;
-    color: black;
-    padding: 10px;
+    padding: 5px;
 }
 
 h1 {
-    color: orange;
-    text-align: center;
-}
-
-img {
-    width: 350px;
+    color: darkorange;
 }
 
 h2 {
-    color: orange;
+    color: darkorange;
 }
 
-section {
-    border: 1px solid orange;
-    margin: 15px;
-    padding: 10px;
+img {
+    width: 250px;
 }
