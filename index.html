@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My WDD130 Page</title>
+    <title>My Web Portfolio</title>
 </head>
 <body>
     <header>
-        <h1>My WDD130 Page</h1>
+        <p><strong>HG</strong></p>
+        <h1>My Web Portfolio</h1>
+        <p>WDD130 | Class projects</p>
+
         <nav>
             <a href="index.html">Home</a>
             <a href="wwr/index.html">WWR</a>
@@ -17,64 +20,78 @@
     </header>
 
     <main>
-        <h2>Welcome to my page</h2>
-        <p>This is my page for WDD130. I will be adding my class assignments here.</p>
-
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I'm from Hawaii and I'm going to BYU-Idaho. I'm still learning how to make websites.</p>
+        <section>
+            <h2>Welcome to My Portfolio</h2>
+            <p>My web development projects and class work.</p>
+            <p>I am learning HTML, CSS, and web design.</p>
+            <a href="#projects">Explore My Work</a>
+            <p><img src="wwr/images/mountains.jpg" alt="Mountains" width="350"></p>
         </section>
 
-        <section>
-            <h2>White Water Rafting</h2>
-            <p>Here is the rafting website I have been working on.</p>
-            <img src="wwr/images/rapids.jpg" alt="People rafting down a river" width="300">
-            <p><a href="wwr/index.html">My rafting website</a></p>
+        <section id="projects">
+            <h2>White Water Rafting (WWR)</h2>
+            <img src="wwr/images/rapids.jpg" alt="White water rafting" width="200">
+            <p>This is a website I made for my rafting project.</p>
+            <a href="wwr/index.html">View Project</a>
         </section>
 
         <section id="ice">
             <h2>ICE Challenges</h2>
-            <p>These are some of the projects we did in class.</p>
-            <ul>
-                <li><a href="ice/halloween/index.html">Halloween Page</a></li>
-                <li><a href="ice/favorite_devo/favdevo.html">Favorite Devotionals</a></li>
-                <li>More coming soon</li>
-            </ul>
+            <img src="ice/halloween/images/halloween.png" alt="Halloween project" width="150">
+            <p>These are small assignments we work on in class.</p>
+            <a href="#links">View Projects</a>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Photo coming soon</p>
+            <p>I'm from Hawaii and I go to BYU-Idaho.</p>
+            <p>I am learning how to make websites and want to get better at it.</p>
+            <a href="#contact">Read More</a>
         </section>
 
         <section>
-            <h2>Class Projects</h2>
+            <h2>Class Progress</h2>
             <table border="1">
                 <tr>
                     <th>Project</th>
-                    <th>What it is</th>
+                    <th>Status</th>
                 </tr>
                 <tr>
-                    <td>WWR</td>
-                    <td>Rafting website</td>
+                    <td>WWR website</td>
+                    <td>In progress</td>
                 </tr>
                 <tr>
-                    <td>ICE</td>
-                    <td>Small class assignments</td>
+                    <td>Portal page</td>
+                    <td>Working on HTML</td>
                 </tr>
             </table>
         </section>
 
-        <section>
-            <h2>Contact</h2>
+        <section id="contact">
+            <h2>Contact / Feedback</h2>
             <form>
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name">
                 <br><br>
                 <label for="message">Message:</label>
-                <input type="text" id="message" name="message">
+                <textarea id="message" name="message" rows="3" cols="30"></textarea>
+                <br>
                 <button type="submit">Send</button>
             </form>
+
+            <h3 id="links">Quick Links</h3>
+            <ul>
+                <li><a href="wwr/index.html">WWR Project</a></li>
+                <li><a href="ice/halloween/index.html">Halloween ICE</a></li>
+                <li><a href="ice/favorite_devo/favdevo.html">Favorite Devotionals</a></li>
+                <li><a href="#about">About Me</a></li>
+            </ul>
         </section>
     </main>
 
     <footer>
-        <p>WDD130 - My Portal Page</p>
+        <p>&copy; 2026 My Web Portfolio | WDD130</p>
     </footer>
 </body>
 </html>
