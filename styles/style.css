@@ -36,3 +36,9 @@ footer {
     text-align: center;
     padding: 10px;
 }
+
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
