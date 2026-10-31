@@ -11,14 +11,28 @@ header {
     padding: 20px;
 }
 
+header h1 {
+    margin: 5px 0;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    margin-top: 15px;
+}
+
 nav a {
     color: white;
-    margin-right: 15px;
+    background-color: #294A66;
+    text-align: center;
+    padding: 10px;
 }
 
 main {
     max-width: 900px;
     margin: 20px auto;
+    padding: 0 15px;
 }
 
 section {
@@ -28,17 +42,37 @@ section {
     margin-bottom: 15px;
 }
 
-img {
-    max-width: 100%;
+h2 {
+    margin-top: 0;
 }
 
-footer {
-    text-align: center;
-    padding: 10px;
+img {
+    max-width: 100%;
 }
 
 .project-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 15px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+input, textarea {
+    max-width: 100%;
+}
+
+footer {
+    background-color: #16324F;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
