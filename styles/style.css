@@ -76,3 +76,14 @@ footer {
     text-align: center;
     padding: 10px;
 }
+
+/* Make the two project boxes stack on smaller screens */
+@media (max-width: 600px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        grid-template-columns: 1fr 1fr;
+    }
+}
