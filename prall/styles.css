@@ -68,3 +68,6 @@ footer p { margin:10px 0 0; }
  .crossroads,.idaho-falls { flex-direction:column; }
  .crossroads img,.idaho-falls img { max-width:100%; }
 }
+/* Sharper original-resolution photos with gentle in-browser corrections */
+.hero img { filter:brightness(1.09) contrast(1.06) saturate(1.05); object-position:center 57%; }
+.feature-local img,.idaho-falls img { filter:brightness(1.10) contrast(1.06) saturate(1.13); }
