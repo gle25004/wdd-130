@@ -1,33 +1,107 @@
-<!doctype html>
-<html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Find parks, attractions, shops, restaurants, and local favorites in Rexburg, Idaho.">
-<title>Explore Local | Rexburg Fun</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="styles.css"></head><body><header class="site-header"><div class="navigation">
-<a class="brand" href="index.html" aria-label="Rexburg Fun home">
-<img class="logo" src="images/logo.png" alt="" width="54" height="57">
-<span class="brand-text"><span class="wordmark">REXBURG <span>FUN</span></span><span class="tagline">YOUR GUIDE TO GOOD TIMES</span></span></a>
-<nav class="nav-links" aria-label="Main navigation">
-<a href="index.html">Home</a>
-<a href="byui.html">BYU-I Activities</a>
-<a href="local.html" aria-current="page">Explore Local</a>
-</nav></div></header>
-<main><div class="container">
-<section class="sub-hero local" aria-labelledby="local-heading"><div class="sub-hero-copy"><span class="eyebrow">Around Rexburg</span><h1 id="local-heading">Explore Local</h1><p>Parks, good food, places to visit, and the little things that make Rexburg a fun place to spend a day.</p></div>
-<div class="sub-hero-image"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Rexburg%2C_Idaho_%281164625661%29.jpg" alt="Downtown Rexburg street and storefronts" width="800" height="580"></div></section>
-<section class="content-section" aria-labelledby="discover-heading"><div class="section-header-line"><span class="section-kicker">Your local guide</span><h2 id="discover-heading">Things to see &amp; do</h2><p>Rexburg is full of places to explore. If you have a car, the St. Anthony Sand Dunes, Tetons, and Yellowstone area make for even more adventures.</p></div>
-<div class="local-grid">
-<article class="local-card"><h3><a href="https://www.rexburg.org/o/parksrecreation/page/porter-park" target="_blank" rel="noopener noreferrer">Parks</a></h3><ul class="plain-list"><li>Smith Park</li><li>Porter Park (local events)</li><li>Nature Park</li><li>Eagle Park &amp; Campground</li></ul></article>
-<article class="local-card"><h3>Places to visit</h3><ul class="plain-list"><li>Legacy Flight Museum</li><li>Museum of Rexburg</li><li>Gravity Factory</li><li>Roots and Boots</li><li>FatCats (movies &amp; bowling)</li><li>Paramount 5</li><li>Romance Theater</li></ul></article>
-<article class="local-card"><h3><a href="https://www.madisonlib.org/" target="_blank" rel="noopener noreferrer">Local library</a></h3><p>Madison Library has books, activities, and community programs. If you live nearby, check what you need to get a local library card.</p></article>
-<article class="local-card"><h3>Shops</h3><ul class="plain-list"><li>Holidae Fun &amp; Games</li><li>Ross Dress for Less</li><li>Deseret Industries</li><li>Deseret Book</li><li>Mike's Music</li></ul></article>
-</div></section>
-<section class="content-section" aria-labelledby="food-heading"><div class="food-section"><span class="section-kicker">Grab something good</span><h2 id="food-heading">Food &amp; restaurants</h2><p>Need a lunch break or dinner plans? Here are a few local options to try.</p>
-<div class="food-columns"><ul class="plain-list"><li>Millhollow Restaurant (sandwiches)</li><li>Jimmy John's</li><li>Tropical Smoothie Café</li><li>Kainoa's</li><li>Mo' Bettahs Hawaiian Style Food</li></ul>
-<ul class="plain-list"><li>Righteous Slice (pizza)</li><li>Café Rio</li><li>Costa Vida</li><li>Teton Bagel</li><li>And more!</li></ul></div></div></section>
-<section class="info-band"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Rexburg%2C_Idaho_%281164625661%29.jpg" alt="Street in Rexburg" width="300" height="180" loading="lazy"><div><span class="section-kicker">Take a little drive</span><h2><a href="https://www.idahofallsidaho.gov/" target="_blank" rel="noopener noreferrer">Visit Idaho Falls</a></h2><p>If nothing in town strikes your fancy, Idaho Falls is only a short drive away. Have fun exploring wherever you go.</p><p class="photo-credit">Rexburg street photo: <a href="https://commons.wikimedia.org/wiki/File:Rexburg,_Idaho_(1164625661).jpg" target="_blank" rel="noopener noreferrer">Ken Lund</a>, <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 2.0</a>.</p></div></section>
-</div></main><footer class="site-footer"><div class="footer-inner">
-<div><div class="footer-brand">REXBURG <span>FUN</span></div><p>Helping you find something fun to do in Rexburg, Idaho.</p></div>
-<div class="footer-links"><a href="index.html">Home</a><a href="byui.html">BYU-I</a><a href="local.html">Local</a><a href="https://www.facebook.com/BYUID/" target="_blank" rel="noopener noreferrer">BYU-I Facebook</a></div>
-</div><div class="footer-bottom">Rexburg Fun &copy; 2026 &middot; Student website project</div></footer></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Parks, shops, and restaurants around Rexburg, Idaho.">
+  <title>Local Places | Rexburg Fun</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="header-content">
+    <a href="index.html" class="site-name">
+      <img src="images/logo.png" alt="" width="55" height="55">
+      <span>Rexburg Fun</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="byui.html">BYU-I</a>
+      <a href="local.html" aria-current="page">Local</a>
+    </nav>
+  </div>
+</header>
+
+<main class="page">
+  <h1>Local Places in Rexburg</h1>
+  <p class="subtitle">Check out some fun places around town.</p>
+  <img class="hero-image local-photo" src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Rexburg%2C_Idaho_%281164625661%29.jpg" alt="Downtown Rexburg shops and street">
+  <p class="photo-credit">Photo by <a href="https://commons.wikimedia.org/wiki/File:Rexburg,_Idaho_(1164625661).jpg" target="_blank" rel="noopener noreferrer">Ken Lund</a>, <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 2.0</a></p>
+  <p>Rexburg has some cool places to visit. If you have a car, you could also go to the sand dunes, the Tetons, or Yellowstone.</p>
+
+  <section>
+    <h2>Places to Visit</h2>
+    <div class="card-grid">
+      <article class="simple-card">
+        <h3>Parks</h3>
+        <ul>
+          <li>Smith Park</li>
+          <li>Porter Park</li>
+          <li>Nature Park</li>
+          <li>Eagle Park &amp; Campground</li>
+        </ul>
+        <a href="https://www.rexburg.org/o/parksrecreation/page/porter-park" target="_blank" rel="noopener noreferrer">Porter Park information</a>
+      </article>
+      <article class="simple-card">
+        <h3>Fun Activities</h3>
+        <ul>
+          <li>Legacy Flight Museum</li>
+          <li>Museum of Rexburg</li>
+          <li>Gravity Factory</li>
+          <li>Roots and Boots</li>
+          <li>FatCats</li>
+          <li>Paramount 5</li>
+          <li>Romance Theater</li>
+        </ul>
+      </article>
+      <article class="simple-card">
+        <h3>Shopping</h3>
+        <ul>
+          <li>Holidae Fun &amp; Games</li>
+          <li>Ross Dress for Less</li>
+          <li>Deseret Industries</li>
+          <li>Deseret Book</li>
+          <li>Mike's Music</li>
+        </ul>
+      </article>
+      <article class="simple-card">
+        <h3>Madison Library</h3>
+        <p>The library has books, activities, and programs for people in Rexburg. It's a good place to visit.</p>
+        <a href="https://www.madisonlib.org/" target="_blank" rel="noopener noreferrer">Library website</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="extra-section">
+    <h2>Places to Eat</h2>
+    <div class="food-lists">
+      <ul>
+        <li>Millhollow Restaurant</li>
+        <li>Jimmy John's</li>
+        <li>Tropical Smoothie Café</li>
+        <li>Kainoa's</li>
+        <li>Mo' Bettahs</li>
+      </ul>
+      <ul>
+        <li>Righteous Slice</li>
+        <li>Café Rio</li>
+        <li>Costa Vida</li>
+        <li>Teton Bagel</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="extra-section">
+    <h2>Want to Go Somewhere Else?</h2>
+    <p><a href="https://www.idahofallsidaho.gov/" target="_blank" rel="noopener noreferrer">Idaho Falls</a> is a short drive from Rexburg and has even more places to explore.</p>
+  </section>
+</main>
+
+<footer>
+  <p>Rexburg Fun &copy; 2026</p>
+  <p>Made for a WDD130 website project</p>
+  <p><a href="index.html">Home</a> | <a href="byui.html">BYU-I</a> | <a href="local.html">Local</a></p>
+</footer>
+</body>
+</html>
